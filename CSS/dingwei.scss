@@ -1,0 +1,13 @@
+@charset "UTF-8";
+%reset{
+  margin:0;
+  padding:0;
+    }
+html,body,ul,li{
+  @extend %reset;
+  }
+#wrap{
+  width: 600px;
+  height: 400px;
+  border: 1px dashed #cccccc;
+  }
