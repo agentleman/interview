@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <style>
 
-        .flex
-        {
+        .flex {
             /* 基本样式 */
             width: 350px;
             height: 200px;
@@ -19,31 +19,38 @@
             flex-direction: row;
         }
 
-        .flex > div
-        {
+        .flex > div {
             -webkit-flex: 1 1 auto;
             flex: 1 1 auto;
 
-            width: 30px; /* 让过渡表现良好。（从/到"width:auto"的过渡
-                      至少在 Gecko 和 Webkit 上是有 bug 的。
-                      更多信息参见 http://bugzil.la/731886 ） */
+            width: 30px;
+            /* 让过渡表现良好。（从/到"width:auto"的过渡
+                                 至少在 Gecko 和 Webkit 上是有 bug 的。
+                                 更多信息参见 http://bugzil.la/731886 ） */
 
             -webkit-transition: width 0.7s ease-out;
             transition: width 0.7s ease-out;
         }
 
         /* colors */
-        .flex > div:nth-child(1){ background : #009246; }
-        .flex > div:nth-child(2){ background : #F1F2F1; }
-        .flex > div:nth-child(3){ background : #CE2B37; }
+        .flex > div:nth-child(1) {
+            background: #009246;
+        }
 
-        .flex > div:hover
-        {
+        .flex > div:nth-child(2) {
+            background: #F1F2F1;
+        }
+
+        .flex > div:nth-child(3) {
+            background: #CE2B37;
+        }
+
+        .flex > div:hover {
             width: 200px;
         }
 
     </style>
-
+    <link rel="stylesheet" type="text/css" href="sanlan.css">
 </head>
 <body>
 <p>Flexbox nuovo</p>
@@ -51,6 +58,28 @@
     <div>uno</div>
     <div>due</div>
     <div>tre</div>
+</div>
+<ul style="display:flex;">
+    <li style="flex: 0 0 50%;">45</li>
+    <li style="flex:auto", class="hover">5656</li>
+    <li>534</li>
+    <li>534</li>
+    <li>534</li>
+</ul>
+<div id="jz_flex">
+    <div class="jz_inner">46555555555555555555555555555311111111<br>
+        dfsdfdddddddddddddd111122254748797897
+        415566666666666666
+    </div>
+</div>
+<div id="demo">
+    <div class="left"></div>
+    <div class="right">
+        <p>DGFGD 456456456</p>
+        <span>总人数</span>
+        <span>剩余人数</span>
+        <div class="btn">立即参与</div>
+    </div>
 </div>
 </body>
 </html>
