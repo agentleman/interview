@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,qFAAoE;EAClE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;EAChB,eAAe,EAAE,IAAI",
+"sources": ["stylebase.scss"],
+"names": [],
+"file": "stylebase.css"
+}

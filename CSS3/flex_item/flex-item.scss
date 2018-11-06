@@ -8,6 +8,7 @@
   //flex-direction: column;
   //align-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 10px;
   div{
     @include square(80px,80px);
     background: #000;
@@ -19,6 +20,7 @@
     color: #ffffff;
     font-size: 40px;
     font-weight: bolder;
+    box-shadow: 2px 5px 6px darkblue;
     //flex: none;
   }
   div:nth-child(2){
@@ -54,5 +56,29 @@
     font-weight: bolder;
     //flex: none;
   }
+  }
+}
+.box2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  //justify-content: space-around;
+  @include square(300px,300px);
+  //align-content: flex-start;
+  position: absolute;
+  top:0;
+  right:50px;
+  .item{
+    @include square(80px,80px);
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Microsoft YaHei UI";
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height:80px;
+    margin: 5px;
+    //flex-grow: 1;
   }
 }
