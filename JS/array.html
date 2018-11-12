@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="数组练习万个亿">
+    <meta name="keywords" content="生活  金融……">
+    <!--<meta http-equiv="Page-Exit" content="revealTrans(duration=5.0,transition=20)">-->
+    <title>array</title>
+</head>
+
+<body>
+<style>
+    .Zhong {
+        width: 200px;
+        height: 200px;
+        border: 2px dashed red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+</style>
+<div class="Zhong">
+
+</div>
+</body>
+
+<script lang="javascript" type="text/javascript" >
+    function addNode() {
+        var newP = document.createElement('p');
+        var textNode = document.createTextNode('this is an create text');
+        newP.appendChild(textNode);
+        // document.createAttribute('class:first');
+        // newP.createAttribute(class'first');
+        newP.setAttribute('class', 'first');
+        document.body.appendChild(newP);
+        console.log(newP)
+    }
+
+    // addNode();
+    // document.write('\*im\*boy')
+    var arr0 = [2, 34, 46];
+
+    function add(obj) {
+        sum = 0;
+        for (var i = 0; i < obj.length; i++) {
+            sum = sum + obj[i];
+        }
+        console.log(sum + 'sum');
+    }
+
+    add(arr0);
+
+    var arr1 = [4, 0, 7, 9, 0, 0, 2, 6, 0, 3, 1, 0];
+
+    function delentMore(obj) {
+        var newArr = [];
+        for (i = 0; i < obj.length; i++) {
+            if (obj[i] !== 0) {
+                newArr.push(obj[i]);
+            } else {
+                continue;
+                // return;
+            }
+        }
+        console.log(newArr + 'deleteMore')
+    }
+
+    delentMore(arr1);
+
+    var bb = [69, 54, 95, 47, 88, 17, 42, 93, 85, 67];
+
+    function order(b) {
+        for (j = 0; j < b.length; j++) {
+            for (k = 0; k < b.length - 1 - j; k++) {
+                if (b[k] > b[k + 1]) {
+                    var temp = b[k];
+                    b[k] = b[k + 1];
+                    b[k + 1] = temp;
+                }
+            }
+        }
+        console.log(b)
+    }
+
+    order(bb);
+
+    function Max(obj) {
+        var max = obj[0];
+        for (var i = 0; i < obj.length; i++) {
+            if (obj[i] > max) {
+                max = obj[i];
+            }
+        }
+        return max;
+    }
+
+    console.log(Max(bb));
+
+    //随机创建数组 并排序
+
+    function creatrNum() {
+        var ranArr = [];
+        for (var i = 0; i < 10; i++) {
+            var randomNum = Math.floor(Math.random() * 100 + 10);
+            ranArr.push(randomNum)
+        }
+        ;
+        for (var k = 0; k < ranArr.length; k++) {
+            for (var j = 0; j < ranArr.length - k - 1; j++) {
+                if (ranArr[j + 1] < ranArr[j]) {
+                    var temp = ranArr[j + 1];
+                    ranArr[j + 1] = ranArr[j];
+                    ranArr[j] = temp;
+                }
+            }
+        }
+        ;
+        console.log(ranArr);
+    }
+
+
+</script>
+<script src="array.js"></script>
+
+
+</html>

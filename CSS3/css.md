@@ -36,3 +36,6 @@ _background-color:#1e0bd1;/*IE6识别*/
 * Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示,可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决。
 
 * 超链接访问过后hover样式就不出现了，被点击访问过的超链接样式不再具有hover和active了。解决方法是改变CSS属性的排列顺序:L-V-H-A ( love hate ): a:link {} a:visited {} a:hover {} a:active {}
+### 为不通尺寸媒体设置对应的样式
+* <link rel="stylesheet" type="text/css" href="../base.css" media="only screen and (max device-width:420px)">
+* CSS @media only screen and (max-device-width:420px){}

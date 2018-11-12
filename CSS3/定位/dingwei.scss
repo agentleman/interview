@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "../style/base";
+@import "../style/stylebase.scss";
 %reset{
   margin:0;
   padding:0;
@@ -94,11 +94,19 @@ html,body,ul,li{
     width: 200px;
     height: 100px;
     border: 2px solid red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -100px;
   }
-  .three{
-    float: left; 
-    width: 200px;
-    height: 100px;
-    border: 2px solid orangered;
-  }
+  //.three{
+  //  float: left;
+  //  width: 200px;
+  //  height: 100px;
+  //  border: 2px solid orangered;
+  //}
+  //.float{
+  //  float: left;
+  //  @include  square(100px,100px);
+  //}
   }

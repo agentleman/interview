@@ -1,0 +1,16 @@
+@import "../style/stylebase.scss";
+.puman{
+  width: 100%;
+  min-height: 100px;
+  background: #cccccc;
+  display: flex;
+  .left{
+    flex-basis: 100px;
+    height: 400px;
+    border: 1px solid grey;
+  }
+  .right{
+    flex-grow: 1;
+    border: 1px solid red;
+  }
+}
