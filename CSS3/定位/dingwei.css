@@ -71,7 +71,9 @@ html, body, ul, li {
     width: 200px;
     height: 100px;
     background-color: grey;
-    margin: 0 auto; }
+    margin: 0 auto;
+    visibility: hidden;
+    display: none; }
   #wrap .two {
     float: left;
     width: 200px;
