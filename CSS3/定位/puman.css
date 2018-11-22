@@ -1,0 +1,20 @@
+body, div, ul, li, ol, p, span, a, table, tr, td, img, i, dl, dt, dd, form, input, textarea {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+.puman {
+  width: 100%;
+  min-height: 100px;
+  background: #cccccc;
+  display: flex; }
+  .puman .left {
+    flex-basis: 100px;
+    height: 400px;
+    border: 1px solid grey; }
+  .puman .right {
+    flex-grow: 1;
+    border: 1px solid red; }
+
+/*# sourceMappingURL=puman.css.map */

@@ -1,4 +1,4 @@
-@import "../style/stylebase.scss";
+@import  "../style/stylebase.scss";
 .footer{
   width: 100%;
   text-align: center;
@@ -49,9 +49,11 @@
   line-height: 250px;
   display: flex;
   background: red;
+  opacity: 0.75;
   //flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 20px;
   .left{
     margin: 2px;
     background: #ffffff;
@@ -102,4 +104,30 @@
       }
     }
   }
+}
+
+
+
+.wrap_2{
+  @include square(250px,250px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: indianred;
+  margin: 20px;
+  .box{
+    @include square(100px,100px);
+    border: 1px solid black;
+    background: antiquewhite;
+    animation:  rot 2s ease .12s infinite alternate;  
+    // @keyframes rot
+    //  {
+    //    0% {
+    //       scale (1.2);
+    //    }
+    //   100% {
+    //      scale(1.0)
+    //   }
+    // }
+    }
 }
