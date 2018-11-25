@@ -119,15 +119,6 @@
     @include square(100px,100px);
     border: 1px solid black;
     background: antiquewhite;
-    animation:  rot 2s ease .12s infinite alternate;  
-    // @keyframes rot
-    //  {
-    //    0% {
-    //       scale (1.2);
-    //    }
-    //   100% {
-    //      scale(1.0)
-    //   }
-    // }
+    animation:  rot 2s ease .12s infinite alternate;
     }
 }

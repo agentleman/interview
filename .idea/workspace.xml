@@ -8,8 +8,10 @@
     <list id="b9396fc4-0185-4316-a0e2-4c778d3ce048" name="New changelist (6)" comment="camera&#10;" />
     <list id="7e9e6fcc-3e2b-4547-9688-0632a6e08866" name="New changelist" comment="" />
     <list default="true" id="1574f1ef-7f7c-4f70-870e-33fbcf40c5f9" name="Default" comment="animation">
+      <change beforePath="" afterPath="$PROJECT_DIR$/JS/test.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CSS3/donghua/css3.html" afterPath="$PROJECT_DIR$/CSS3/donghua/css3.html" />
+      <change beforePath="$PROJECT_DIR$/CSS3/donghua/css3.css" afterPath="$PROJECT_DIR$/CSS3/donghua/css3.css" />
+      <change beforePath="$PROJECT_DIR$/CSS3/donghua/css3.css.map" afterPath="$PROJECT_DIR$/CSS3/donghua/css3.css.map" />
       <change beforePath="$PROJECT_DIR$/CSS3/donghua/css3.scss" afterPath="$PROJECT_DIR$/CSS3/donghua/css3.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,14 +29,24 @@
       <file leaf-file-name="css3.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS3/donghua/css3.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2460">
-              <caret line="123" column="18" lean-forward="false" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+            <state relative-caret-position="370">
+              <caret line="121" column="52" lean-forward="false" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css3.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="css3.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS3/donghua/css3.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -60,9 +72,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Sass File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -111,6 +123,7 @@
         <option value="$PROJECT_DIR$/CSS3/donghua/css3.html" />
         <option value="$PROJECT_DIR$/CSS3/donghua/css3.css" />
         <option value="$PROJECT_DIR$/CSS3/donghua/css3.scss" />
+        <option value="$PROJECT_DIR$/JS/test.js" />
       </list>
     </option>
   </component>
@@ -141,7 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,26 +165,13 @@
             <path>
               <item name="interview" type="b2602c69:ProjectViewProjectNode" />
               <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="CSS3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interview" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="CSS3" type="462c0819:PsiDirectoryNode" />
-              <item name="donghua" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interview" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="CSS3" type="462c0819:PsiDirectoryNode" />
-              <item name="donghua" type="462c0819:PsiDirectoryNode" />
-              <item name="css3.scss" type="620a8d5e:NestingTreeNode" />
+              <item name="JS" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,6 +247,7 @@
       <workItem from="1542790780181" duration="14705000" />
       <workItem from="1542855995277" duration="7045000" />
       <workItem from="1542878136237" duration="23000" />
+      <workItem from="1543029342175" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="flex">
       <created>1541073656220</created>
@@ -301,10 +302,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144231000" />
+    <option name="totallyTimeSpent" value="144912000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19207773" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -370,7 +371,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CSS/dingwei.html" />
     <entry file="file://$PROJECT_DIR$/CSS/dingwei.css" />
     <entry file="file://$PROJECT_DIR$/CSS/dingwei.scss" />
     <entry file="file://$PROJECT_DIR$/CSS/dingwei.scss" />
@@ -382,13 +382,13 @@
     <entry file="file://$PROJECT_DIR$/CSS/base.sass" />
     <entry file="file://$PROJECT_DIR$/CSS3/CSS/base.css.map" />
     <entry file="file://$PROJECT_DIR$/CSS3/定位/dingwei.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSS3/定位/dingwei.min.css">
@@ -619,15 +619,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/donghua/css3.scss">
+    <entry file="file://$PROJECT_DIR$/CSS3/donghua/css3.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2460">
-          <caret line="123" column="18" lean-forward="false" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS3/donghua/css3.css">
+    <entry file="file://$PROJECT_DIR$/CSS3/donghua/css3.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="121" column="52" lean-forward="false" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

@@ -1,63 +1,119 @@
-/*
-Error: Invalid CSS after "        scale(0.8)": expected "{", was "}"
-        on line 125 of css3.scss
+body, div, ul, li, ol, p, span, a, table, tr, td, img, i, dl, dt, dd, form, input, textarea {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
 
-120:     border: 1px solid black;
-121:     background: antiquewhite;
-122:     animation:  rot 2s ease .12s infinite alternate;  @keyframes rot {
-123:       25%{
-124:         scale(0.8)
-125:       }
-126:       100%{
-127:         scale(1.2)
-128:       }
-129:     }
-130:   }
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid darkgrey; }
 
-Backtrace:
-css3.scss:125
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:677:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:678:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:225:in `directive_body'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:217:in `directive'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:678:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:678:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/scss:13:in `<top (required)>'
-C:/Ruby24-x64/bin/scss:23:in `load'
-C:/Ruby24-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"        scale(0.8)\": expected \"{\", was \"}\"\A         on line 125 of css3.scss\A \A 120:     border: 1px solid black;\A 121:     background: antiquewhite;\A 122:     animation:  rot 2s ease .12s infinite alternate;  @keyframes rot {\A 123:       25%{\A 124:         scale(0.8)\A 125:       }\A 126:       100%{\A 127:         scale(1.2)\A 128:       }\A 129:     }\A 130:   }"; }
+.header {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid green; }
+
+.wrap {
+  display: flex;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  -webkit-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box; }
+  .wrap .right {
+    box-sizing: border-box;
+    width: 200px;
+    background-color: red;
+    height: 100%; }
+  .wrap .left {
+    box-sizing: border-box;
+    width: 200px;
+    background-color: purple;
+    height: 100%; }
+  .wrap .main {
+    height: 100%;
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    background: #009246; }
+
+.wrap_1 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 250px;
+  display: flex;
+  background: red;
+  opacity: 0.75;
+  align-items: center;
+  justify-content: center;
+  margin: 20px; }
+  .wrap_1 .left {
+    margin: 2px;
+    background: #ffffff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    animation: scale 0.75s ease-out 0.12s infinite; }
+@keyframes scale {
+  30% {
+    transform: scale(0.3); }
+  100% {
+    transform: scale(1); } }
+  .wrap_1 .mid {
+    margin: 2px;
+    background: #ffffff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    animation: scale 0.75s ease-out 0.24s infinite; }
+@keyframes scale {
+  30% {
+    transform: scale(0.3); }
+  100% {
+    transform: scale(1); } }
+  .wrap_1 .right {
+    margin: 2px;
+    background: #ffffff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    animation: scale 0.75s ease-out 0.36s infinite; }
+@keyframes scale {
+  30% {
+    transform: scale(0.3); }
+  100% {
+    transform: scale(1); } }
+.wrap_2 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: indianred;
+  margin: 20px; }
+  .wrap_2 .box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    border: 1px solid black;
+    background: antiquewhite;
+    animation: rot 2s ease .12s infinite alternate; }
+
+/*# sourceMappingURL=css3.css.map */
