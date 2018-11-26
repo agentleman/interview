@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOM片段</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <li id="list">黄老弟</li>
+    <img src="http://img03.tooopen.com/uploadfile/downs/images/20110714/sy_20110714135215645030.jpg" alt="懒加载图片" data-realsrc="img1.jpg">
+<script >
+    //加载优化，合并DOM插入
+    var listNode = document.getElementById('list');
+    
+    //插入10个li标签
+    var frag = document.createDocumentFragment();
+    console.log(flag)
+    //先创建一个片段flag,把要插入的10li都存入flag中，然后在一次性插入DOM中
+    var x,li;
+    for(x=0;x<10;x++){
+        li = document.createElement("li");
+        li.innerHTML = "List item " + x;
+        frag.appendChild(li);
+    }
+
+    listNode.appendChild(flag);
+
+
+    //未缓存DOM查询
+    var  i
+    for(i=0;i<document.getElementsByTagName('p').length;i++){
+
+    }
+    //缓存DOM查询
+    var pList = document.getElementsByTagName('p');
+    var i
+    for(i=0;i<pList.length;i++){
+
+    }
+    //图片懒加载
+    //先给src一个假地址，在需要图片的时候通过JS把真实地址在赋值给src
+</script>
+</body>
+</html>
