@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DOM片段</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-    <li id="list">黄老弟</li>
-    <img src="http://img03.tooopen.com/uploadfile/downs/images/20110714/sy_20110714135215645030.jpg" alt="懒加载图片" data-realsrc="img1.jpg">
-<script >
-    //加载优化，合并DOM插入
-    var listNode = document.getElementById('list');
-    
-    //插入10个li标签
-    var frag = document.createDocumentFragment();
-    console.log(flag)
-    //先创建一个片段flag,把要插入的10li都存入flag中，然后在一次性插入DOM中
-    var x,li;
-    for(x=0;x<10;x++){
-        li = document.createElement("li");
-        li.innerHTML = "List item " + x;
-        frag.appendChild(li);
-    }
+    <li id="list">sdfsfsd</li>
+    <img src="http://img03.tooopen.com/uploadfile/downs/images/20110714/sy_20110714135215645030.jpg" alt="懒加载图片"
+        data-realsrc="img1.jpg">
+   <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.js"></script> 
+   <script>
+        //加载优化，合并DOM插入
+        var listNode = document.getElementById('list');
 
-    listNode.appendChild(flag);
+        //插入10个li标签
+        var frag = document.createDocumentFragment();
+        // console.log(frag);
+        //先创建一个片段flag,把要插入的10li都存入flag中，然后在一次性插入DOM中
+        var x, li;
+        for (x = 0; x < 10; x++) {
+            li = document.createElement("li");
+            li.innerHTML = "List item " + x;
+            frag.appendChild(li);
+        }
+
+        listNode.appendChild(frag);
 
 
-    //未缓存DOM查询
-    var  i
-    for(i=0;i<document.getElementsByTagName('p').length;i++){
+        //未缓存DOM查询
+        var i
+        for (i = 0; i < document.getElementsByTagName('p').length; i++) {
 
-    }
-    //缓存DOM查询
-    var pList = document.getElementsByTagName('p');
-    var i
-    for(i=0;i<pList.length;i++){
+        }
+        //缓存DOM查询
+        var pList = document.getElementsByTagName('p');
+        var i
+        for (i = 0; i < pList.length; i++) {
 
-    }
-    //图片懒加载
-    //先给src一个假地址，在需要图片的时候通过JS把真实地址在赋值给src
-</script>
+        }
+        //图片懒加载
+        //先给src一个假地址，在需要图片的时候通过JS把真实地址在赋值给src
+
+        //JSONP跨域请求资源
+        // var kuayu = new XMLHttpRequest();
+        // kuayu.open('GET', 'http://baike.baidu.com/api/openapi/BaikeLemmaCardApi?scope=103&format=json&appid=379020&bk_key=关键字&bk_length=600', true);
+        // kuayu.send( );
+        // kuayu.onreadystatechange = function () {
+        //     console.log(kuayu.readyState)
+        //     if (kuayu.responseState == 4) {
+        //         if (kuayu.readyState == 200) {
+        //             // alert(1)
+        //             var obj = responseText;
+        //              console.log( obj);
+        //             // console.log(obj.stringify())
+        //         } else if (kuayu.readyState == 404) {
+        //             console.log('chucuola')
+        //             alert(0)
+        //         }
+        //     }
+        // }
+
+        //jQuery跨域请求
+        $.ajax({
+            type:'get',
+            // async:true,
+            // url:'http://baike.baidu.com/api/openapi/BaikeLemmaCardApi?scope=103&format=json&appid=379020&bk_key=关键字&bk_length=600',
+            url:'http://suggest.taobao.com/sug?code=utf-8&q=卫衣男&callback=cb',
+            // url:'http://www.kuaidi100.com/query?type=ems&postid=快递单号',
+            dataType:'jsonp',
+            jsonp:"callback",
+            jsonpCallback:"mycallback",
+            success:function(data){
+                console.log(data)
+            },
+            error:function(){
+                alert(4)
+            }
+        });
+
+       console.log(32)
+    </script>
 </body>
+
 </html>
